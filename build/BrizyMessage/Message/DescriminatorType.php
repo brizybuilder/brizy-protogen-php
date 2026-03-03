@@ -115,6 +115,18 @@ class DescriminatorType
      * Generated from protobuf enum <code>PUBLISH_SCHEDULED_COLLECTION_ITEM_MESSAGE = 25;</code>
      */
     const PUBLISH_SCHEDULED_COLLECTION_ITEM_MESSAGE = 25;
+    /**
+     * Generated from protobuf enum <code>CREATE_GLOBAL_BLOCK_MESSAGE = 26;</code>
+     */
+    const CREATE_GLOBAL_BLOCK_MESSAGE = 26;
+    /**
+     * Generated from protobuf enum <code>UPDATE_GLOBAL_BLOCK_MESSAGE = 27;</code>
+     */
+    const UPDATE_GLOBAL_BLOCK_MESSAGE = 27;
+    /**
+     * Generated from protobuf enum <code>DELETE_GLOBAL_BLOCK_MESSAGE = 28;</code>
+     */
+    const DELETE_GLOBAL_BLOCK_MESSAGE = 28;
 
     private static $valueToName = [
         self::NONE => 'NONE',
@@ -143,6 +155,9 @@ class DescriminatorType
         self::UPDATE_SYMBOL_MESSAGE => 'UPDATE_SYMBOL_MESSAGE',
         self::DELETE_SYMBOL_MESSAGE => 'DELETE_SYMBOL_MESSAGE',
         self::PUBLISH_SCHEDULED_COLLECTION_ITEM_MESSAGE => 'PUBLISH_SCHEDULED_COLLECTION_ITEM_MESSAGE',
+        self::CREATE_GLOBAL_BLOCK_MESSAGE => 'CREATE_GLOBAL_BLOCK_MESSAGE',
+        self::UPDATE_GLOBAL_BLOCK_MESSAGE => 'UPDATE_GLOBAL_BLOCK_MESSAGE',
+        self::DELETE_GLOBAL_BLOCK_MESSAGE => 'DELETE_GLOBAL_BLOCK_MESSAGE',
     ];
 
     public static function name($value)
