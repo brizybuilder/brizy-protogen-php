@@ -24,6 +24,8 @@ use BrizyMessage\Cloud\CreateProjectMessage;
 use BrizyMessage\Cloud\CreateUserMessage;
 use BrizyMessage\Cloud\DeleteProjectMessage;
 use BrizyMessage\Cloud\DeleteUserMessage;
+use BrizyMessage\Cloud\UpdateProjectMessage;
+use BrizyMessage\Cloud\UpdateUserMessage;
 use BrizyMessage\Doctrine\DoctrineEventMessage;
 use BrizyMessage\Message;
 use BrizyMessage\Notification\NotificationMessage;
