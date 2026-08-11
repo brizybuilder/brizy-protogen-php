@@ -57,10 +57,14 @@ final class ProtobufHydrator implements HydratorInterface
                 return $this->getInstanceOf(NotificationMessage::class, $payload);
             case Message\DescriminatorType::CLOUD_CREATE_PROJECT_MESSAGE:
                 return $this->getInstanceOf(CreateProjectMessage::class, $payload);
+            case Message\DescriminatorType::CLOUD_UPDATE_PROJECT_MESSAGE:
+                return $this->getInstanceOf(UpdateProjectMessage::class, $payload);
             case Message\DescriminatorType::CLOUD_DELETE_PROJECT_MESSAGE:
                 return $this->getInstanceOf(DeleteProjectMessage::class, $payload);
             case Message\DescriminatorType::CLOUD_CREATE_USER_MESSAGE:
                 return $this->getInstanceOf(CreateUserMessage::class, $payload);
+            case Message\DescriminatorType::CLOUD_UPDATE_USER_MESSAGE:
+                return $this->getInstanceOf(UpdateUserMessage::class, $payload);
             case Message\DescriminatorType::CLOUD_DELETE_USER_MESSAGE:
                 return $this->getInstanceOf(DeleteUserMessage::class, $payload);
             case Message\DescriminatorType::CLOUD_CLONE_PROJECT_MESSAGE:
