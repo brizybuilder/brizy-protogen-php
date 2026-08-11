@@ -17,15 +17,22 @@ class Cloud
         \GPBMetadata\Message::initOnce();
         $pool->internalAddGeneratedFile(
             '
-®	
+€
 cloud.protobrizyMessage.cloud"d
 CreateUserMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 user_id (	"d
 DeleteUserMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
+user_id (	"d
+UpdateUserMessage>
+descriminator (2\'.brizyMessage.Message.DescriminatorType
 user_id (	"j
 CreateProjectMessage>
+descriminator (2\'.brizyMessage.Message.DescriminatorType
+
+project_id (	"j
+UpdateProjectMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 
 project_id (	"j
