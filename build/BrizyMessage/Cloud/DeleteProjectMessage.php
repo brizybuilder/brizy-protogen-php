@@ -21,6 +21,10 @@ class DeleteProjectMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string project_id = 2;</code>
      */
     protected $project_id = '';
+    /**
+     * Generated from protobuf field <code>bool hard_delete = 3;</code>
+     */
+    protected $hard_delete = false;
 
     /**
      * Constructor.
@@ -30,6 +34,7 @@ class DeleteProjectMessage extends \Google\Protobuf\Internal\Message
      *
      *     @type int $descriminator
      *     @type string $project_id
+     *     @type bool $hard_delete
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +82,28 @@ class DeleteProjectMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->project_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool hard_delete = 3;</code>
+     * @return bool
+     */
+    public function getHardDelete()
+    {
+        return $this->hard_delete;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool hard_delete = 3;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setHardDelete($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->hard_delete = $var;
 
         return $this;
     }
