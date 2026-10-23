@@ -37,6 +37,10 @@ class UpdateGlobalBlockMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string cloud_access_token = 6;</code>
      */
     protected $cloud_access_token = '';
+    /**
+     * Generated from protobuf field <code>repeated string updated_properties = 7;</code>
+     */
+    private $updated_properties;
 
     /**
      * Constructor.
@@ -50,6 +54,7 @@ class UpdateGlobalBlockMessage extends \Google\Protobuf\Internal\Message
      *     @type string $brziy_api_access_token
      *     @type string $user_id
      *     @type string $cloud_access_token
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $updated_properties
      * }
      */
     public function __construct($data = NULL) {
@@ -185,6 +190,28 @@ class UpdateGlobalBlockMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->cloud_access_token = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string updated_properties = 7;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getUpdatedProperties()
+    {
+        return $this->updated_properties;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string updated_properties = 7;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setUpdatedProperties($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->updated_properties = $arr;
 
         return $this;
     }

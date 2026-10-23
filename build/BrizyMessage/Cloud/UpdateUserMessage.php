@@ -21,6 +21,10 @@ class UpdateUserMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string user_id = 2;</code>
      */
     protected $user_id = '';
+    /**
+     * Generated from protobuf field <code>repeated string updated_properties = 3;</code>
+     */
+    private $updated_properties;
 
     /**
      * Constructor.
@@ -30,6 +34,7 @@ class UpdateUserMessage extends \Google\Protobuf\Internal\Message
      *
      *     @type int $descriminator
      *     @type string $user_id
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $updated_properties
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +82,28 @@ class UpdateUserMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->user_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string updated_properties = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getUpdatedProperties()
+    {
+        return $this->updated_properties;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string updated_properties = 3;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setUpdatedProperties($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->updated_properties = $arr;
 
         return $this;
     }

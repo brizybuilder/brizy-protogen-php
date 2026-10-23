@@ -17,7 +17,7 @@ class Brizy
         \GPBMetadata\Message::initOnce();
         $pool->internalAddGeneratedFile(
             '
-µ
+Á
 brizy.protobrizyMessage.brizy"Ó
 CreateCollectionItemMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
@@ -26,7 +26,7 @@ class Brizy
 entity_iri (	
 brziy_api_access_token (	
 user_id (	
-cloud_access_token (	"Ó
+cloud_access_token (	"ï
 UpdateCollectionItemMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
@@ -34,7 +34,8 @@ entity_iri (	
 entity_iri (	
 brziy_api_access_token (	
 user_id (	
-cloud_access_token (	"²
+cloud_access_token (	
+updated_properties (	"²
 \'PublishedScheduledCollectionItemMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
@@ -56,7 +57,7 @@ entity_iri (	
 entity_iri (	
 brziy_api_access_token (	
 user_id (	
-cloud_access_token (	"Ó
+cloud_access_token (	"ï
 UpdateCollectionTypeMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
@@ -64,7 +65,8 @@ entity_iri (	
 entity_iri (	
 brziy_api_access_token (	
 user_id (	
-cloud_access_token (	"Ó
+cloud_access_token (	
+updated_properties (	"Ó
 DeleteCollectionTypeMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
@@ -80,7 +82,7 @@ entity_iri (	
 entity_iri (	
 brziy_api_access_token (	
 user_id (	
-cloud_access_token (	"Í
+cloud_access_token (	"é
 UpdateCustomerMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
@@ -88,7 +90,8 @@ entity_iri (	
 entity_iri (	
 brziy_api_access_token (	
 user_id (	
-cloud_access_token (	"Í
+cloud_access_token (	
+updated_properties (	"Í
 DeleteCustomerMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
@@ -104,7 +107,7 @@ entity_iri (	
 entity_iri (	
 brziy_api_access_token (	
 user_id (	
-cloud_access_token (	"Ë
+cloud_access_token (	"ç
 UpdateSymbolMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
@@ -112,7 +115,8 @@ entity_iri (	
 entity_iri (	
 brziy_api_access_token (	
 user_id (	
-cloud_access_token (	"Ë
+cloud_access_token (	
+updated_properties (	"Ë
 DeleteSymbolMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
@@ -128,7 +132,7 @@ entity_iri (	
 entity_iri (	
 brziy_api_access_token (	
 user_id (	
-cloud_access_token (	"Ð
+cloud_access_token (	"ì
 UpdateGlobalBlockMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
@@ -136,7 +140,8 @@ entity_iri (	
 entity_iri (	
 brziy_api_access_token (	
 user_id (	
-cloud_access_token (	"Ð
+cloud_access_token (	
+updated_properties (	"Ð
 DeleteGlobalBlockMessage>
 descriminator (2\'.brizyMessage.Message.DescriminatorType
 project_iri (	
