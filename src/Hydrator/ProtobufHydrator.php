@@ -7,15 +7,18 @@ namespace BrizySerializer\Hydrator;
 use BrizyMessage\Brizy\CreateCollectionItemMessage;
 use BrizyMessage\Brizy\CreateCollectionTypeMessage;
 use BrizyMessage\Brizy\CreateCustomerMessage;
+use BrizyMessage\Brizy\CreateGlobalBlockMessage;
 use BrizyMessage\Brizy\CreateSymbolMessage;
 use BrizyMessage\Brizy\DeleteCollectionItemMessage;
 use BrizyMessage\Brizy\DeleteCollectionTypeMessage;
 use BrizyMessage\Brizy\DeleteCustomerMessage;
+use BrizyMessage\Brizy\DeleteGlobalBlockMessage;
 use BrizyMessage\Brizy\DeleteSymbolMessage;
 use BrizyMessage\Brizy\PublishedScheduledCollectionItemMessage;
 use BrizyMessage\Brizy\UpdateCollectionItemMessage;
 use BrizyMessage\Brizy\UpdateCollectionTypeMessage;
 use BrizyMessage\Brizy\UpdateCustomerMessage;
+use BrizyMessage\Brizy\UpdateGlobalBlockMessage;
 use BrizyMessage\Brizy\UpdateSymbolMessage;
 use BrizyMessage\Cloud\CloneCollectionItemMessage;
 use BrizyMessage\Cloud\CloneCustomerMessage;
@@ -105,6 +108,13 @@ final class ProtobufHydrator implements HydratorInterface
                 return $this->getInstanceOf(UpdateSymbolMessage::class, $payload);
             case Message\DescriminatorType::DELETE_SYMBOL_MESSAGE:
                 return $this->getInstanceOf(DeleteSymbolMessage::class, $payload);
+
+            case Message\DescriminatorType::CREATE_GLOBAL_BLOCK_MESSAGE:
+                return $this->getInstanceOf(CreateGlobalBlockMessage::class, $payload);
+            case Message\DescriminatorType::UPDATE_GLOBAL_BLOCK_MESSAGE:
+                return $this->getInstanceOf(UpdateGlobalBlockMessage::class, $payload);
+            case Message\DescriminatorType::DELETE_GLOBAL_BLOCK_MESSAGE:
+                return $this->getInstanceOf(DeleteGlobalBlockMessage::class, $payload);
 
             default:
                 throw new ConvertToMessageFailedException("Unknown discriminator value");
